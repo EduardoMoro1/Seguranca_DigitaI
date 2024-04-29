@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@media screen and (min-width: 768px) {
+    .parametro-coluna__senha{
+        flex-direction: row;
+    }
+}
+/*_____________________________________Vars_______________________________________*/
+:root{
+    --branco:white;
+    --cor-do-fundo:#001f3f;
+    --fundo-senha:#311e05;
+    --fundo-texto:#090d35;
+    --borda:#FF851B;
+    --chakra-petch:"Chakra Petch", sans-serif;
+}
+body{
+    background-color:var(--cor-do-fundo);
+    color: var(--branco)
+}
+/*_____________________________titulos_______________________________________*/
+.titulo-principal{
+    font-family: var(--chakra-petch);
+    font-size: 32px;
+}
+.titulo-secundario{
+    font-family: var(--chakra-petch);
+    font-size: 20px;
+}
+.conteudo-titulo{
+    text-align: center;
+    margin-top: 80px;
+}
+/*_________________________parametro e senha___________________________________*/
+.conteudo-senha{
+    margin-top: 80px; 
+    background: var(--fundo-senha);
+    padding: 24px;
+    border-bottom: 6px solid var(--borda);
+    border-left: 1px solid var(--borda);
+    border-top: 1px solid var(--borda);
+    border-right: 1px solid var(--borda);
+}
+#campo-senha{
+    background-color: var(--fundo-senha);
+    border: none;
+    color: var(--branco);
+    font-family: var(--roboto-mono);
+    font-size: 40px;
+    width: 70%;
+}
+#campo-senha:focus{
+    outline: none;
+}
+.parametro-titulo{
+    font-family: var(--chakra-petch);
+    font-size: 28px;
+}
+.parametro{
+    font-family: var(--chakra-petch);
+    background: linear-gradient(to right, #311e05, #8d5501, #311e05);
+    border: 5px solid var(--borda);
+    margin-top: 32px;
+    padding: 24px;
+}
+.parametro-senha-titulo{
+    font-family: var(--chakra-petch);
+    font-size: 24px;
+}
+.parametro-coluna-senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parametro-senha{
+    width: 50%;
+    margin: 0 auto;
+}
+/*_______________________________Numero de caracteres____________________________*/
+.parametro-senha-botoes{
+    display: flex;
+    justify-content: center;
+
+}
+.parametro-senha-botao{
+    background-color: var(--fundo-texto);
+    color: white;
+    border: 2px solid var(--borda);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.parametro-senha-numero{
+    font-family: var(--chakra-petch), Arial, Helvetica, sans-serif;
+    background-color: var(--fundo-texto);
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+}
+/*________________________________CheckBoxes_______________________________________*/
+.label{
+    font-size: 20px;
+}
+.checkbox{
+    width: 20ox;
+    height:20px;
+    cursor: pointer;
+}
+/*___________________________________Barra_______________________________________*/
+.parametro-senha-textos{
+    display: flex;
+    justify-content: space-between;
+}
+.barra{
+    background-color: var(--fundo-senha);
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--borda);
+}
+.forca{
+    height: 30px;
+    position: relative;
+    bottom: 31px;
+    left: 1px;
+}
+.fraca{
+    background: linear-gradient(90deg, rgba(130,0,0,1) 0%, rgba(249,50,0,1) 10%);
+    width: 33%;
+}
+.razoavel{
+    background: linear-gradient(90deg, rgba(130,0,0,1) 0%, rgba(249,50,0,1) 10%, rgba(250,146,0,1) 27%, rgba(255,241,28,1) 46%);
+    width: 66%;
+}
+.forte{
+    background: linear-gradient(90deg, rgba(130,0,0,1) 0%, rgba(249,50,0,1) 10%, rgba(250,146,0,1) 27%, rgba(255,241,28,1) 46%, rgba(255,229,88,1) 61%, rgba(208,251,0,1) 81%, rgba(22,255,0,1) 100%);
+    width: 100%;
+}
